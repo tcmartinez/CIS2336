@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Simple HTML Form</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- Global CSS -->
+	<link href='../../css/styles.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!-- Script 2.1 - form.html -->
+
+<form class="salary-form" action="handle_with_validation_salary.php" method="post">
+
+	<fieldset><legend>Enter your information in the form below:</legend>
+
+	<p>
+		<fieldset class="form-group">
+	    <legend>Enter Salary</legend>
+	    <div class="form-check">
+	      <label class="form-check-label">
+	        <input type="radio" class="form-check-input" name="salary" value="Below or equal 7000$ a year">
+	        Below or equal 7000$ a year
+	      </label>
+	    </div>
+	    <div class="form-check">
+	    <label class="form-check-label">
+	        <input type="radio" class="form-check-input" name="salary" value="Above 7000$ a year">
+	        Above 7000$ a year
+	      </label>
+	    </div>
+	  </fieldset>
+	</p>
+	<button type="submit" class="btn btn-primary" name="submit">Submit Salary</button>
+</form>
+
+</body>
+</html>

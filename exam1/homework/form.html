@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Simple HTML Form</title>
+	<style type="text/css" title="text/css" media="all">
+	label {
+		font-weight: bold;
+		color: #300ACC;
+	}
+	</style>
+</head>
+<body>
+<!-- Script 2.1 - form.html -->
+
+<form action="handle_with_validation_address.php" method="post">
+
+	<fieldset><legend>Enter your information in the form below:</legend>
+
+	<p>
+		<fieldset class="form-group">
+	    <legend>Choose a shipping address</legend>
+	    <div class="form-check">
+	      <label class="form-check-label">
+	        <input type="radio" class="form-check-input" name="address" value="Natalia Fofanova 1234 Blue street, Kemah, TX">
+	        Natalia Fofanova 1234 Blue street, Kemah, TX
+	      </label>
+	    </div>
+	    <div class="form-check">
+	    <label class="form-check-label">
+	        <input type="radio" class="form-check-input" name="address" value="Denise Silva 5678 Sunflower seed street, Houston, TX">
+	        Denise Silva 5678 Sunflower seed street, Houston, TX
+	      </label>
+	    </div>
+	    <div class="form-check disabled">
+	    <label class="form-check-label">
+	        <input type="radio" class="form-check-input" name="address" value="University of Houston 4800 Academy Street, Houston, TX">
+	        University of Houston 4800 Academy Street, Houston, TX
+	      </label>
+	    </div>
+	  </fieldset>
+	</p>
+	<button type="submit" class="btn btn-primary" name="submit">Use this address</button>
+</form>
+
+</body>
+</html>
